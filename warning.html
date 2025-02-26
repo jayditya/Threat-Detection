@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberHawk Warning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="warning-container">
+        <h1>⚠ Warning!</h1>
+        <p>We detected that the website</p>
+        <p class="site-url"><strong>http://maliciouswebsitetest.com/</strong></p>
+        <p class="danger-text">is not secure.</p>
+        <p>We recommend you close this tab.</p>
+        <button class="safe-btn" onclick="redirectToSafe()">Take me to safety</button>
+        <button class="proceed-btn" onclick="proceedAnyway()">Let me in anyway</button>
+    </div>
+
+    <script>
+        function redirectToSafe() {
+            window.location.href = "https://www.google.com";
+        }
+
+        function proceedAnyway() {
+            alert("Proceeding to the website at your own risk!");
+        }
+    </script>
+</body>
+</html>
